@@ -1,140 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>DevOps Dashboard</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background: #f4f6f8;
-        }
-
-        /* Header */
-        header {
-            background: linear-gradient(90deg, #0f172a, #020617);
-            color: white;
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        header h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 16px;
-            opacity: 0.9;
-        }
-
-        /* Cards Section */
-        .container {
-            max-width: 1200px;
-            margin: 60px auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-
-        .card {
-            color: white;
-            padding: 30px;
-            border-radius: 18px;
-            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-            transition: transform 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-        }
-
-        .card h2 {
-            font-size: 26px;
-            margin-bottom: 10px;
-        }
-
-        .card p {
-            font-size: 14px;
-            margin-bottom: 20px;
-            opacity: 0.95;
-        }
-
-        .card button {
-            padding: 10px 22px;
-            border: none;
-            border-radius: 8px;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            cursor: pointer;
-            font-size: 14px;
-        }
-
-        .card button:hover {
-            background: rgba(255,255,255,0.35);
-        }
-
-        /* Card Colors */
-        .aws {
-            background: linear-gradient(135deg, #ff9800, #ff6d00);
-        }
-
-        .os {
-            background: linear-gradient(135deg, #22c55e, #16a34a);
-        }
-
-        .cicd {
-            background: linear-gradient(135deg, #3b82f6, #2563eb);
-        }
-
-        .docker {
-            background: linear-gradient(135deg, #0ea5e9, #0284c7);
-        }
-    </style>
+    <title>My First Vercel Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Welcome to My Website</h1>
+    <p>This site is deployed on Vercel 🚀</p>
+    <button onclick="sayHello()">Click Me</button>
 
-<header>
-    <h1>DevOps Dashboard</h1>
-    <p>AWS • OS • CI/CD • Docker</p>
-</header>
-
-<section class="container">
-    <div class="card aws">
-        <h2>☁ AWS</h2>
-        <p>EC2 & Cloud basics</p>
-        <button>View</button>
-    </div>
-
-    <div class="card os">
-        <h2>🖥 OS</h2>
-        <p>Linux commands</p>
-        <button>View</button>
-    </div>
-
-    <div class="card cicd">
-        <h2>🔁 CI/CD</h2>
-        <p>Pipeline automation</p>
-        <button>View</button>
-    </div>
-
-    <div class="card docker">
-        <h2>🐳 Docker</h2>
-        <p>Containers & images</p>
-        <button>View</button>
-    </div>
-</section>
-
+    <script src="script.js"></script>
 </body>
 </html>
